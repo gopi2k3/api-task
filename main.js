@@ -26,10 +26,10 @@ mainfun()
 
 function result(data){
 	
+	console.log(data)
 	
-	
-	row.innerHTML+=` <div class="col-lg-3 col-sm-12 col-md-6 mx-auto my-2">
-			    <div class="card p-2 shadow " >
+	row.innerHTML+=` <div class="col-lg-3 col-sm-12 col-md-6 mx-auto my-2 ">
+			    <div class="card p-2 shadow border-0  " >
 				    <img src="${data.image.medium}">
 					<div class="content">
 					    <div class="title pt-1"><h5>${data.name}</h5></div>
@@ -37,6 +37,7 @@ function result(data){
 					    <div><h6></h6>Rating :<span class="rating">${data.rating.average}</span></div>
 					    <div><h6></h6>Type:${data.type}</div>
 					</div>	
+					<button class="border-0 mt-2"><a class="text-decoration-none" href="${data.url}" target=_blank>click</a></button>
 					</div>
 				</div>
 			     
